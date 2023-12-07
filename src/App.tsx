@@ -1,8 +1,9 @@
 import { useState } from 'react'
+
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import TextForm from './components/Form'
+import FormContainer from './components/Forms/FormContainer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,13 +26,12 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
-        <TextForm formType="email" textarea="name@example.com" labelText='Email Addreess'/>
-        <TextForm formType="textarea" textarea="Add text" labelText='Example textarea'/>
-       
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      <FormContainer />
     </>
   )
 }
